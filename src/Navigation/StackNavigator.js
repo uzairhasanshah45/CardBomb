@@ -5,7 +5,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Home from '../Features/Home/Home';
 import StartScreen from '../Features/StartScreen/StartScreen';
 import FailedScreen from '../Features/FailedScreen/FailedScreen';
-// import SuccessScreen from '../Features/SuccessScreen/SuccessScreen';
+import SuccessScreen from '../Features/SuccessScreen/SuccessScreen';
 
 const Stack = createStackNavigator();
 
@@ -28,11 +28,11 @@ export default function StackNavigator() {
           component={FailedScreen}
           options={{gestureEnabled: false}}
         />
-        {/* <Stack.Screen
+        <Stack.Screen
           name="SuccessScreen"
           component={SuccessScreen}
           options={{gestureEnabled: false}}
-        />   */}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

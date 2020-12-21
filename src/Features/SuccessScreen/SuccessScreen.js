@@ -4,7 +4,6 @@ import {View, Text, TouchableOpacity, SafeAreaView} from 'react-native';
 import LottieView from 'lottie-react-native';
 
 const SuccessScreen = (props) => {
-
   return (
     <View style={styles.mainView}>
       <SafeAreaView backgroundColor={'#92B6D4'} opacity={0.95} />
@@ -12,9 +11,7 @@ const SuccessScreen = (props) => {
         <Text style={styles.headerText}>Congratulations</Text>
       </View>
       <View style={styles.instruction}>
-        <Text style={styles.instructiontext}>
-          You Won !.
-        </Text>
+        <Text style={styles.instructiontext}>You Won !.</Text>
       </View>
       <View style={styles.animationBox}>
         <LottieView
@@ -27,7 +24,7 @@ const SuccessScreen = (props) => {
       <View style={styles.buttonBox}>
         <TouchableOpacity
           style={styles.button}
-          onPress={() => navigation.navigate('Home')}>
+          onPress={() => props.navigation.navigate('Home')}>
           <Text style={styles.txt}>Play Again</Text>
         </TouchableOpacity>
       </View>

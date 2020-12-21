@@ -1,0 +1,3 @@
+export const INCREASE_SCORE = 'INCREASE_SCORE';
+export const INCREASE_BOMB = 'INCREASE_BOMB';
+export const CLEAR_STATE = 'CLEAR_STATE';

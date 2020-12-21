@@ -1,8 +1,9 @@
 import {ScaledSheet} from 'react-native-size-matters';
+import {colors} from '../../config';
 export const styles = ScaledSheet.create({
   mainView: {
     flex: 1,
-    backgroundColor: '#126782',
+    backgroundColor: colors.background,
   },
   header: {
     alignItems: 'center',
@@ -12,10 +13,13 @@ export const styles = ScaledSheet.create({
     color: 'white',
     fontSize: '40@ms',
     fontFamily: 'Cochin',
+    fontWeight: 'bold',
   },
   subheaderText: {
-    fontSize: '16@ms',
+    marginTop: 7,
+    fontSize: '14@ms',
     color: 'white',
+    textAlign: 'center',
   },
   animation: {
     height: '220@vs',
@@ -52,17 +56,17 @@ export const styles = ScaledSheet.create({
   buttonBox: {flex: 1, justifyContent: 'center'},
   button: {
     margin: '10@ms',
-    backgroundColor: '#219ebc',
+    backgroundColor: colors.mainColor,
     elevation: 4,
     height: '50@ms',
-    width: '120@ms',
+    paddingHorizontal: '35@ms',
     justifyContent: 'center',
     alignItems: 'center',
     alignSelf: 'center',
-    borderRadius: '30@ms',
+    borderRadius: '10@ms',
   },
   txt: {
     fontSize: '20@ms',
-    color: '#fff'
+    color: '#fff',
   },
 });

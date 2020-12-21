@@ -10,7 +10,9 @@ const StartScreen = (props) => {
       <SafeAreaView backgroundColor={'#f4845f'} opacity={0.95} />
       <View style={styles.header}>
         <Text style={styles.headerText}>Card Bomb</Text>
-        <Text style={styles.subheaderText}>Let's use your brain</Text>
+        <Text style={styles.subheaderText}>
+          A mind game to play with cards and brain to stop blast
+        </Text>
       </View>
       <View style={styles.animationBox}>
         <LottieView
@@ -25,7 +27,7 @@ const StartScreen = (props) => {
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate('Home')}>
-          <Text style={styles.txt}>Play</Text>
+          <Text style={styles.txt}>Start Game</Text>
         </TouchableOpacity>
       </View>
     </View>

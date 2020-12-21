@@ -1,5 +1,4 @@
-import Element from './element'
+import Element from './element';
+import Header from './appHeader';
 
-export {
-    Element,
-};
+export {Element, Header};
